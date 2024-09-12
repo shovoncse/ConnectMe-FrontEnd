@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.profile-gallery {
+    max-width: 615px;
+    margin: 0 auto;
+  }
+  
+  .gallery-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 16px;
+  }
+  
+  .gallery-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-top: 20px;
+    object-fit: fill;
+}
+  
+  .profile-gallery-info {
+    flex: 1;
+    margin-top: 3rem;
+  }
+  
+  .username {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+  }
+  
+  .profile-stats {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .profile-stats li {
+    margin-right: 30px;
+  }
+  
+  .stat-count {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .profile-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .post {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  
+  .post img {
+    width: 100%;
+  }
+
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 33.33%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  div#gallery-info {
+    flex-basis: 30%;
+}
+div#gallery-section {
+  width: 70%;
+}

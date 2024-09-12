@@ -1,0 +1,55 @@
+body {
+  color: #737491;
+  font-family: "Inter", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.signin {
+  height: 100vh;
+}
+.signin-form {
+  width: 650px;
+  min-height: 550px;
+  position: relative;
+}
+.signin-form::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 550px;
+  background: url(../img/signin-illustration.png) center / cover;
+}
+.signin-form-inner {
+  z-index: 1;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+}
+.signin .position-absolute {
+  z-index: 100;
+}
+.signin input:focus,
+.btn:focus {
+  box-shadow: none;
+}
+.signin-form-bottom a .social-icon {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: transparent;
+  border: 1px solid #e5e5e5;
+  border-radius: 50%;
+  color: #737491;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+}
+.signin-form-bottom a :hover.social-icon {
+  background-color: #39add4;
+  border-color: #39add4;
+  color: #fff;
+}

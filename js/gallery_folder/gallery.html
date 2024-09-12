@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Connect Me</title>
+    <!--------iconscout cdn----------->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="../css/style.css">
+    
+</head>
+<body>
+    <!--------Navbar---------->
+    <nav>
+      <div class="container">
+          <h2 class="logo" onclick="window.location.href='index.html'">
+              <img src="friendsImgs/logo1.png" alt="" style="width:270px;">
+          </h2>
+          <div class="create">
+              <label class="btn btn-primary" for="create-post">Create</label>
+              <div class="profile-photo" onclick="window.location.href='profile.html'">
+                  <img src="friendsImgs/default-profile.jpg" id="nav-user-logo">
+              </div>
+          </div>
+      </div>
+  </nav>
+
+  
+  <div class="profile-container">
+    <img src="friendsImgs/default-cover.jpg" class="cover-pic" id="profile-cover-image">
+    <div class="profile-details">
+
+        <div class="pd-left">
+            <div class="pd-row">
+                <img src="friendsImgs/default-profile.jpg" class="profile-pic" id="profile-image">
+                <div>
+                    <h3 id="profile-name">Loading...</h3>
+                    <p id="profile-username">@username</p>
+
+                    <img src="assets/profile/Images/profile-4.jpg">
+                    <img src="assets/profile/Images/profile-5.png">
+                    <img src="assets/profile/Images/profile-4.jpg">
+                    <img src="assets/profile/Images/profile-7.png">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="pd-right">
+            <button type="button" id="add-friend"><i class="uil uil-user"></i>&nbsp;Add Friend</button>
+            <button type="button" id="send-sms"><i class="uil uil-message"></i>&nbsp;Messages</button>
+            <button type="button" id="edit-profile" onclick="window.location.href='update-profile.html'"><i class="uil uil-edit"></i>&nbsp;Edit</button>
+        </div>
+    </div>
+    <div class="profile-info">
+        <div class="info-col" id="gallery-info">
+
+            <div class="profile-intro">
+                <h3>Intro</h3>
+                <p class="intro-text" id="profile-bio">Work hard till you succeed</p>
+                <hr>
+                <ul>
+                    <li><img src="assets/profile/Images/Jobicon.png"><span id="profile-profession">Software Engineer</span></li>
+                    <li><img src="assets/profile/Images/studyicon.png"><span id="profile-education">Studies at OAMK</span></li>
+                    <li><img src="assets/profile/Images/location.jpg"> Lives in&nbsp;<span id="profile-location">Dhaka,Bangladesh</span></li>
+                    <li><img src="assets/profile/Images/location.jpg"> From&nbsp;<span id="profile-country">Oulu,Finland</span></li>
+                </ul>
+            </div>
+
+
+            <div class="profile-intro">
+                <div class="title-box">
+                    <h3>Photos</h3>
+                    <a href="user-profile/gallery.html">All Photos</a>
+                </div>
+                <div class="photo-box">
+                    <div><img src="assets/profile/Images/photo1.jpg"></div>
+                    <div><img src="assets/profile/Images/photo2.jpg"></div>
+                    <div><img src="assets/profile/Images/photo3.jpg"></div>
+                    <div><img src="assets/profile/Images/photo4.jpg"></div>
+                    <div><img src="assets/profile/Images/photo5.jpg"></div>
+                    <div><img src="assets/profile/Images/photo1.jpg"></div>
+
+
+                </div>
+            </div>
+
+            <div class="profile-intro">
+                <div class="title-box">
+                    <h3>Friends</h3>
+                    <a href="">All friends</a>
+                </div>
+                <p>220(4 mutual)</p>
+                <div class="friends-box">
+                    <div><img src="assets/profile/Images/profile-2.jpg">
+                        <p>John Doe</p>
+                    </div>
+                    <div><img src="assets/profile/Images/shovon profile.jpg">
+                        <p>Shovon Das</p>
+                    </div>
+                    <div><img src="assets/profile/Images/profile-5.png">
+                        <p>Justin </p>
+                    </div>
+                    <div><img src="assets/profile/Images/profile-6.png">
+                        <P>Zane fraser</P>
+                    </div>
+                    <div><img src="assets/profile/Images/profile-3.png">
+                        <p>Franchis Joshep</p>
+                    </div>
+                    <div><img src="assets/profile/Images/Hamid profile.jpg">
+                        <p>Arnold Gregory</p>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="post-col" id="gallery-section">
+            
+    <div class="profile-gallery">
+      <div class="gallery-header">
+        <div class="gallery-image">
+          <img src="friendsImgs/f11.jpg" class="gallery-image">
+        </div>
+        <div class="profile-gallery-info">
+          <ul class="profile-stats">
+            <li><span class="stat-count">Posts</span>
+              <p>345</p>
+          </li>
+            <li><span class="stat-count">Followers</span>
+              <p>45.6K</p>
+          </li>
+            <li><span class="stat-count">Following</span>
+              <p>302</p>
+          </li>
+          </ul>
+        </div>
+      </div>
+      <div class="profile-posts">
+              <!-- Photo Grid -->
+      <div class="row" style="background: none;"> 
+        <div class="column">
+          <img src="friendsImgs/22.jpg" style="width:100%">
+          <img src="friendsImgs/f1.jpg" style="width:100%">
+          <img src="friendsImgs/f10.jpg" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="friendsImgs/f11.jpg" style="width:100%">
+          <img src="friendsImgs/f12.jpg" style="width:100%">
+            <img src="friendsImgs/f11.jpg" style="width:100%">
+        </div>  
+        <div class="column">
+          <img src="friendsImgs/f14.jpg" style="width:100%">
+          <img src="friendsImgs/f1.jpg" style="width:100%">
+          <img src="friendsImgs/f10.jpg" style="width:100%">
+        </div>
+      </div>
+      </div>
+    </div>
+        </div>
+    </div>
+</div>
+    <!--------user profile clone instagram---------->
+
+
+      
+
+</body>
+</html> 
